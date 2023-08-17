@@ -1,0 +1,46 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "allowAzureIps": {
+            "value": true
+        },
+        "enableADS": {
+            "value": false
+        },
+        "location": {
+            "value": "westus3"
+        },
+        "serverName": {
+            "value": "synapse-devdb"
+        },
+        "enableVA": {
+            "value": false
+        },
+        "vaStoragelessEnabled": {
+            "value": false
+        },
+        "useVAManagedIdentity": {
+            "value": false
+        },
+        "serverTags": {
+            "value": {}
+        },
+        "minimalTlsVersion": {
+            "value": "1.2"
+        },
+        "publicNetworkAccess": {
+            "value": "enabled"
+        },
+        "administrators": {
+            "value": {
+                "administratorType": "activeDirectory",
+                "login": "jason.astuto@pointedroseranch.com",
+                "sid": "1111111111111111111111111111111111",
+                "tenantId": "1111111111111111111111111111111",
+                "azureADOnlyAuthentication": true,
+                "principalType": "User"
+            }
+        }
+    }
+}
